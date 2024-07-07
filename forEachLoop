@@ -1,0 +1,18 @@
+#import java.util.*;
+class one
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    int[] arr = new int[4];
+    arr[0]=26;
+    arr[1]=18;
+    arr[2]=2003;
+    arr[3]=8;
+    // enhanced for-loop or for each loop
+    for(int j: arr)      //for(DATA_TYPE VAR_NAME: ARRAY_NAME)
+    {
+      System.out.println(j);
+    }
+  }
+}
