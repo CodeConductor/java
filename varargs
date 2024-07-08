@@ -1,0 +1,8 @@
+class VarAry{
+    public static void main(String[] args){
+        diSp(2,4,5,6,45,6,7,4,3,44,56);
+    }
+  static void diSp(int ...v){            // creation of varable length arguments using the syntax:data_type ...var_name 
+        System.out.println((Arrays.toString(v)));
+    }
+}
