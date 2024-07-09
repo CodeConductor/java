@@ -1,0 +1,9 @@
+class typecast {
+    public static void main(String[] args) {
+        byte b=127;     //upper limit of byte type
+        int a=26,c=17;
+        a=b;    //type conversion -- no data is lost
+        b=(byte)c;  //type casting -- data could be lost
+        System.out.println(a+"\n"+b);
+    }
+}
