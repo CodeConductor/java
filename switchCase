@@ -1,0 +1,76 @@
+//old switch case
+public class switchcase {
+        public static void main(String[] args) {
+            String day="Saturday";
+
+            switch(day)
+            {
+                case "Monday":
+                    System.out.println("First day of week");
+                    break;
+                case "Tuesday":
+                    System.out.println("Second day of week");
+                    break;
+                case "Wednesday":
+                    System.out.println("Third day of week");
+                    break;
+                case "Thursday":
+                    System.out.println("Fourth day of week");
+                    break;
+                case "Friday":
+                    System.out.println("Fifth day of week");
+                    break;
+                case "Saturday", "Sunday":
+                    System.out.println("Weekend");
+                    break;
+                default: System.out.println("Not any day of week");
+            }
+        }
+}
+
+
+//new switch case OR, enhanced switch case
+public class switchcase {
+        public static void main(String[] args) {
+            String day="Friday";
+
+switch (day) {
+                case "Monday" -> System.out.println("First day of week");
+                case "Tuesday" -> System.out.println("Second day of week");
+                case "Wednesday" -> System.out.println("Third day of week");
+                case "Thursday" -> System.out.println("Fourth day of week");
+                case "Friday" -> System.out.println("Fifth day of week");
+                case "Saturday", "Sunday" -> System.out.println("Weekend");
+                default -> System.out.println("Not any day of week");
+            }
+          }
+      }
+
+//switch with yield keyword
+import java.util.*;
+public class switchcase {
+        public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+
+            String day;
+            day = sc.nextLine();
+            String whatDay = switch(day){
+
+                case "Monday":
+                    yield "First day of week";
+                case "Tuesday":
+                    yield "Second day of week";
+                case "Wednesday":
+                    yield "Third day of week";
+                case "Thursday":
+                    yield "Fourth day of week";
+                case "Friday":
+                    yield "Fifth day of week";
+                case "Saturday", "Sunday":
+                    yield "Weekend";
+                default: yield "Not any day of week";
+            };
+            System.out.println(whatDay);
+        }
+}
+
